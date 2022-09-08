@@ -1,4 +1,4 @@
-#include <stidio.h>
+#include <stdio.h>
 /**
  * main - Print output using, puts
  *
