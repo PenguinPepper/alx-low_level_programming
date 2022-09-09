@@ -12,7 +12,7 @@ int main(void)
 {
 	char alp;
 
-	if (alp != q || alp != e)
+	if (alp != 'q' || alp != 'e')
 	{
 		for (alp = 'a' ; alp <= 'z' ; alp++)
 		{
