@@ -12,17 +12,15 @@ int main(void)
 {
 	char alp;
 
-	alp = 'a';
-
-	if (alp != 'q' || alp != 'e')
+	for (alp = 'a' ; alp <= 'z' ; alp++)
 	{
-		for (alp = 'a' ; alp <= 'z' ; alp++)
+		if (alp != 'q' || alp != 'e')
 		{
 		putchar(alp);
 		}
-	}
-	else
-	{
+		else
+		{
+		}
 	}
 	putchar('\n');
 	return (0);
