@@ -1,11 +1,14 @@
 #include <stdlib.h>
 
 #include <time.h>
+#include <stdio.h>
 
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
+/**
+ * main - Determine whther n is 0, + or -
+ *
+ * Description: Functio will check if n is equal to conditions
+ * Return: Z0 if all goes well
+ */
 
 int main(void)
 
@@ -18,4 +21,17 @@ int main(void)
 	/* your code goes there */
 	return (0);
 
+	if (n > 0)
+	{
+		printf("%d is poitive", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero", n);
+	}
+	else if (n < 0)
+	{
+		printf("%d is negative", n);
+	}
+	return (0);
 }
