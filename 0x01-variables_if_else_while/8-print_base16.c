@@ -12,7 +12,7 @@ int main(void)
 
 	char alp;
 
-	for (num = '0' ; num <= '9' ; nu++)
+	for (num = '0' ; num <= '9' ; num++)
 	{
 	putchar(num);
 	}
