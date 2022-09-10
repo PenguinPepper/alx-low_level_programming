@@ -15,7 +15,7 @@ int main(void)
 		putchar(combo);
 		if (combo < 9)
 		{
-		putchar(',');
+		putchar(' ');
 		putchar(',');
 		}
 	}
