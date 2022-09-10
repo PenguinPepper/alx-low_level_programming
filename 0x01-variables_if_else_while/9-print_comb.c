@@ -13,12 +13,13 @@ int main(void)
 	for (combo = '0' ; combo <= '9' ; combo++)
 	{
 		putchar(combo);
-		if (combo < '9')
+		if (combo != '9')
 		{
 		putchar(' ');
 		putchar(',');
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
