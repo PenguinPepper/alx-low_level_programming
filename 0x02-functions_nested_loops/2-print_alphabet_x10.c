@@ -18,7 +18,7 @@ void print_alphabet_x10(void)
 		_putchar(abet);
 		abet++;
 	} while (abet <= 'z');
-	}
 
 	_putchar('\n');
+	}
 }
