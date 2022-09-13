@@ -2,6 +2,7 @@
 
 /**
  * _abs - compute the absolute value of an integer
+ * @num: The only argument
  *
  * Descriptiom: Print the absolute value of an integer
  * Return: If all goes well 0
