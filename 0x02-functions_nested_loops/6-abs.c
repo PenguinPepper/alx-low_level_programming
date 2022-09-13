@@ -6,10 +6,8 @@
  * Descriptiom: Print the absolute value of an integer
  * Return: If all goes well 0
  */
-int _abs(int)
+int _abs(int num)
 {
-	int num;
-
 	if (num > 0)
 	{
 		return (num);
