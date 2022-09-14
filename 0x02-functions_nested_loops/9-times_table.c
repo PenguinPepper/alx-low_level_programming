@@ -3,28 +3,37 @@
 /**
  * time_table - print the 9 times table starting from 0
  *
+ * Description: Prints the 9 tims tables, starting from 0 times.
+ * This will be done 10 times in a row.
  * Return: IF all goes well 0
  */
 void times_table(void)
 {
-	int fl, sl, result;
+	int fl, sl, mr;
 
 	for (fl = 0; fl <= 9; fl++)
 	{
 	_putchar(48);
 	for (sl = 1; sl <= 9; sl++)
 	{
-		_putchar(44);
-		_putchar(32);
-		result = fl * sl;
-		if (result <= 9)
+		mr = fl * sl;
+		if (sl == 0)
 		{
+			_putchar(mr + '0');
+		}
+		else if (mr < 10 && fl != 0)
+		{
+			_putchar(',');
 			_putchar(' ');
+			_putchar(' ');
+			_putchar(mr + '0');
 		}
 		else
 		{
-			_putchar((result / 10) + 48);
-			_putchar((result % 10) + 48);
+			_putchar(',');
+			_putchar(' ');
+			_putchar((mr / 10) + 0);
+			_putchar((mr % 10) + 0);
 		}
 	}
 	_putchar('\n');
