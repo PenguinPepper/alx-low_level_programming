@@ -1,1 +1,1 @@
-This repo contains the directory and/or directories for the C programming languangue in ALX
+This directory contains the files for the Mor functions, more loops project
