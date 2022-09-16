@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - print fuzz for prime numbers
@@ -29,7 +30,7 @@ int main(void)
 		}
 		if (i < 100)
 		{
-			printf(" ");
+			printf(' ');
 		}
 		printf("\n");
 		return (0);
