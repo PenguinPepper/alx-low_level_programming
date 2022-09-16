@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
+ * main - print fuzz for prime numbers
  *
+ * Return: 0 if all goes well
  */
 int main(void)
 {
