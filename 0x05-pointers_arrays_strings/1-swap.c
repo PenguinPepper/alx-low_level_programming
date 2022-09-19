@@ -9,4 +9,10 @@
  */
 void swap_int(int *a, int *b)
 {
+	/*third integer value*/
+	int tv;
+
+	tv = *a;
+	*a = *b;
+	*b = tv;
 }
