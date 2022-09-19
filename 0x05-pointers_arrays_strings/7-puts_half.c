@@ -11,4 +11,13 @@
  */
 void puts_half(char *str)
 {
+	int fir, sec;
+
+	for (fir = 0; str[fir] != '\0'; ++fir)
+		;
+	for (sec = (fir + 1); sec < 1; ++sec)
+	{
+		_putchar(str[sec]);
+	}
+	_putchar('\n');
 }
