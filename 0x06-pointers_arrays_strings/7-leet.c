@@ -19,13 +19,9 @@ char *leet(char *one)
 	{
 		for (j = 0; j < 10; j += 2)
 		{
-			char b[11] = "aAeEoOtTlL";
-
-			char c[11] = "4433007711";
-
-			if (b[j] == one[i])
+			if (i == j)
 			{
-				one[i] = c[j];
+				one[i] = j;
 			}
 		}
 	}
