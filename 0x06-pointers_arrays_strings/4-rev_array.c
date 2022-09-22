@@ -9,14 +9,22 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i = 0, decoy, count;
+	int i = 0, decoy, *count, j;
 
-	n = n - 1;
-	count = n / 2;
-	while (i < count)
+	count = a;
+	for (j = 1; j < n; j++)
 	{
-		decoy = a[i];
-		a[i++] = a[n--];
-		a[n--] = decoy;
+		count++;
 	}
+	while (i < j / 2)
+	{
+		i++;
+		decoy = a[i];
+		a[i] = *count;
+		*count = decoy;
+		count--;
+	}
+
+
+	
 }
