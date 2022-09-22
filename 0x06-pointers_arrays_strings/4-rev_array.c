@@ -9,10 +9,11 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i = 0, decoy;
+	int i = 0, decoy, count;
 
 	n = n - 1;
-	while (i < n)
+	count = n / 2;
+	while (i < count)
 	{
 		decoy = a[i];
 		a[i++] = a[n--];
