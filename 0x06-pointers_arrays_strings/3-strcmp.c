@@ -13,25 +13,16 @@ int _strcmp(char *s1, char *s2)
 	int a, b;
 
 	a = 0;
-	do {
-		s1++;
-		a++;
-	} while (*s1 != '\0');
 	b = 0;
-	do {
-		s2++;
+	while (a == 0)
+	{
+		if ((*(s1 + b) == '\0') && (*(s2 + b) == '\0'))
+		{
+			break;
+		}
+		a = *(s1 + b) - *(s2 + b);
 		b++;
-	} while (*s2 != '\0');
-	if (a > b)
-	{
-		b = 3;
 	}
-	else if (a < b)
-	{
-		b = -3;
-	}
-	else
-		b = 0;
-	return (b);
+	return (a);
 
 }
