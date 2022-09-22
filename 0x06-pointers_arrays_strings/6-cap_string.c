@@ -24,7 +24,7 @@ char *cap_string(char *str)
 			{
 				if ((*(str + (normchar + 1)) >= 97) && (*(str + (normchar + 1)) <= 122))
 				{
-					*(str + (normchar + 1)) = *(str + (norchar + 1)) - 32;
+					*(str + (normchar + 1)) = *(str + (normchar + 1)) - 32;
 					break;
 				}
 			}
