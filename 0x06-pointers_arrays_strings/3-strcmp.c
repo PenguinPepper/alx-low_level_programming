@@ -10,7 +10,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a, b, c;
+	int a, b;
 
 	a = 0;
 	do {
