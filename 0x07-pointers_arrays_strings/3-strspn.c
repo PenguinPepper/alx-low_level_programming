@@ -11,10 +11,10 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int search, lengofa, i, j;
-	unsigned int bytes = 0;
+i  knl	unsigned in
 
 	for (i = 0; accept[i] != '\0'; i++)
-		accept_len = i;
+		search = i;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		search = 0;
