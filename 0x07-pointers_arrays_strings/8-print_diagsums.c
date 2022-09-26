@@ -11,6 +11,5 @@
  */
 void print_diagsums(int *a, int size)
 {
-	printf( a + sixe);
 	return (0);
 }
