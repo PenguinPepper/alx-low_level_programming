@@ -10,8 +10,8 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int search, lengofa, i, j;
-	unsigned int bytes = 0;
+	int search, i, j;
+	int bytes = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
