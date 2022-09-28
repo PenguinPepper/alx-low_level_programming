@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * squared - function will return the sqared value of number
+ * @x: number to be multipled y number of times
+ * @y: number to raise to the power of
+ *
+ * Return: x to power of y
+ */
+int squared(int x, int y)
+{
+	int pow = y * y;
+
+	if (pow > x)
+		return (-1);
+	if (pow == x)
+		return (y);
+	return (squared(x, y + 1));
+}
+
+
+/**
  * _sqrt_recursion - will return the natural square root of a number
  * @n: number to be square rooted
  *
@@ -10,5 +29,5 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (_pow_recursion(n, 1));
+	return (squared(n, 1));
 }
