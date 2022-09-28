@@ -10,4 +10,5 @@
  */
 int _sqrt_recursion(int n)
 {
+	return (_pow_recursion(n, 1));
 }
