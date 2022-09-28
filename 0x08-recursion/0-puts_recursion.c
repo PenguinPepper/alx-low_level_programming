@@ -9,12 +9,12 @@
 void _puts_recursion(char *s)
 {
 	int i = 0;
-	int add;
+	int add = 1;
 
 	if (s[i] != '\0')
 	{
 		_putchar(s[i]);
-		add = i + 1;
+		add++;
 		_putchar(s[add]);
 	}
 	_putchar('\n');
