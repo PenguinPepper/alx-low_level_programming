@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 1)
 		printf("0");
-	for (i = 1; i < argc; i++)
+	for (n = 1; n < argc; n++)
 	{
 		k += atoi(argv[n]);
 		for (j = 0; argv[n][j] != '\0'; j++)
