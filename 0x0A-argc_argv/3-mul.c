@@ -18,6 +18,6 @@ int main(int argc, char *argv[])
 	{
 		result *= atoi(argv[i]);
 	}
-	printf("%d\n", product);
+	printf("%d\n", result);
 	return (0);
 }
