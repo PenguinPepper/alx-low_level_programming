@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		k += atoi(argv[n]);
-		for (j = 0; argv[m][j] != '\0'; j++)
+		for (j = 0; argv[n][j] != '\0'; j++)
 		{
-			if (!(isdigit(argv[m][j])))
+			if (!(isdigit(argv[n][j])))
 			{
 				printf("Error\n");
 				return (0);
