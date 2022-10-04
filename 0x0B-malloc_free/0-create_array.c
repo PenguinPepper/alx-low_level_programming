@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of chars
@@ -22,7 +23,7 @@ char *create_array(unsigned int size, char c)
 	{
 		while (str[i] == '\0')
 		{
-			str[i] == c;
+			str[i] = c;
 			i++;
 		}
 	}
