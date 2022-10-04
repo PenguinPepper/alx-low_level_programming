@@ -19,13 +19,11 @@ char *create_array(unsigned int size, char c)
 	str = malloc(size * sizeof(char));
 	if (size == 0 || str == NULL)
 		return (NULL);
-	else
+	while (str[i] == '\0')
 	{
-		while (str[i] == '\0')
-		{
-			str[i] = c;
-			i++;
-		}
-		return (str);
+		str[i] = c;
+		i++;
 	}
+	return (str);
+
 }
