@@ -12,4 +12,33 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	unsigned int i = 0, j = 0, leng1 = 0, leng2 = 0, leng3;
+	char *hold;
+
+	hold = malloc(sizeof(char) * leng3 + 1);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	if (s3 == NULL)
+		return (NULL);
+
+	while (s1[leng1])
+		leng1++;
+	while (s2[leng2])
+		leng2++;
+	leng3 = leng1 + leng2;
+
+	while (i < leng1)
+	{
+		hold[i] = s1[i];
+		i++;
+	}
+	while (i <= leng3)
+	{
+		hold[i] = s2[j];
+		i++;
+		j++;
+	}
+	return (hold);
 }
