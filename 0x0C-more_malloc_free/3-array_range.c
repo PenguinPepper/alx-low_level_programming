@@ -27,5 +27,5 @@ int *array_range(int min, int max)
 		ptr[i] = j;
 		j++;
 	}
-	return (ptr);
+	return (ptr1);
 }
