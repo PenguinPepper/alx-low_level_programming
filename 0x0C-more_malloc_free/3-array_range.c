@@ -24,7 +24,7 @@ int *array_range(int min, int max)
 	if (ptr1 == NULL)
 		return (NULL);
 	ptr2 = ptr1;
-	k = min
+	k = min;
 	for (i = 0; i <= range; i++)
 	{
 		ptr1[i] = k;
