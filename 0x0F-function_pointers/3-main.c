@@ -1,0 +1,39 @@
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - Prints results
+ * @argc: number of arguments
+ * @argv: array of pointers
+ *
+ * Return: if all goes well 0
+ */
+int main(int argc, char *argv[])
+{
+	char *op;
+	int num1, num2;
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+	}
+
+	num1 = atoi(argv[1]);
+	op = argv[2];
+	num2 = atoi(argv[3]);
+
+	if (get_op_func(op) == NULL || op[1] != '\0')
+	{
+		printf("Error\n");
+	}
+
+	if ((*op == '%' && num2 == 0) || (*op == '/' && num2 == 0))
+	{
+		printf("Error\n");
+	}
+
+	printf("%d\n", get_op_func(op)(num1, num2));
+	return (0);
+
+}
