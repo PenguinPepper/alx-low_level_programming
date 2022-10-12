@@ -9,11 +9,11 @@
  * @size: is the size of the array
  * @action: a pointer to the function you need to use
  *
- * Return: if all foes well 0
+ * Return: if all goes well 0
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (array != NULL && action != NULL && size > 0)
 	{
