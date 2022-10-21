@@ -5,7 +5,7 @@
 /**
  * struct list_s - singly linked list
  * @str: string
- * @len: length of the string
+ * @length: length of the string
  * @next: pointer to next node
  *
  * Description: singly linked list node
