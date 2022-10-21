@@ -12,8 +12,8 @@
  */
 typedef struct list_s
 {
-	unsigned int length;
 	char *str;
+	unsigned int length;
 	struct list_s *next;
 
 } list_t;
