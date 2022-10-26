@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * ree_listint - function that frees a listint_t list
+ * free_listint - function that frees a listint_t list
  * @head: pointer to start of list
  *
  * Return: if alll goes well 0
