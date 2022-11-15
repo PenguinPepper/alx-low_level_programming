@@ -15,7 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *first;
 	unsigned int count = 0;
 
-	if (heade && str)
+	if (head && str)
 	{
 
 	list_t *first = malloc(sizeof(list_t));
@@ -27,5 +27,6 @@ list_t *add_node(list_t **head, const char *str)
 	first->length = count;
 	first->next = (*head);
 	}
-	return (head;
+
+	return (head);
 }
