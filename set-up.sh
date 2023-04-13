@@ -1,4 +1,4 @@
-#!/usr/env/bash
+#!/usr/bin/env bash
 # Bash script that creates a directory and a readme for the directory
 mkdir "$1" && cd "$1" || exit
 echo "#$2"> README.md
