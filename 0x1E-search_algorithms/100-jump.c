@@ -13,6 +13,8 @@ int jump_search(int *array, size_t size, int value)
 {
 	unsigned int start = 0, end = sqrt(size), i, k;
 
+	if (array == NULL)
+		return (-1);
 	while (array[end] <= value && end < size)
 	{
 		start = end;
